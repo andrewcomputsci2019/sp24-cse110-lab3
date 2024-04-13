@@ -117,13 +117,56 @@
             </section>
             <section>
                 <h3>Audio Notes</h3>
+                <audio aria-label="audio for meeting Notes" controls src="./rsc/Rick Astley - Never Gonna Give You Up (Official Music Video) [ ezmp3.cc ].mp3">Meeting Notes Audio</audio>
             </section>
             <br>
             <section>
                 <h3>Video Notes</h3>
+                <video aria-label="Video recording of the meeting" controls src="./rsc/rickroll.mp4"></video>
             </section>
         </main>
         <br>
+        <br>
+        <form>
+            <fieldset>
+                <legend> Choose Favorite Food</legend>
+                <input type="radio" name="pizza">
+                <label for="pizza">Pizza</label> <br />
+                <input type="radio" name="hot-dog">
+                <label for="hot-dog">Hot Dog</label> <br />
+                <input type="radio" name="NONE">
+                <label for="NONE">None of the Above</label> <br />
+            </fieldset>
+            <fieldset>
+                <legend>Meeting Date and Topic Selection</legend>
+                <input type="date">
+                <input type="text" placeholder="Please enter topics">
+            </fieldset>
+            <label for="text-area"> enter meaning behind your name</label> <br>
+            <textarea name="text-area">Enter meaning here...</textarea>
+            <br>
+            <label for="food-choice">Choose a food:</label>
+            <input list="foods" name="food-choice" />
+            <datalist id="foods">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Gummy Bears"></option>
+                <option value="Strawberries"></option>
+                <option value="Vanilla Ice Cream"></option>
+            </datalist>
+            <br>
+            <label for="animals">Choose your favorite Animal: </label>
+            <select name="animals">
+                <option value="">Select a option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="horse">Horse</option>
+            </select>
+            <br>
+            <button>Do Nothing Button</button>
+        </form>
+        <br>
+        <hr>
         <footer>
             <b>Team 9 Meeting Notes</b>
         </footer>

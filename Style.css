@@ -1,0 +1,26 @@
+.nav-list {
+    list-style: "\1F517";
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar_element span {
+    font-size: large;
+    font-style: italic;
+}
+
+.nav-list li > a {
+    font-style: italic;
+}
+.nav-list li a:hover {
+    color: darkmagenta;
+}
+.nav-list li a:focus {
+    color: #434750
+}
+
+.nav-list li a:active {
+    color: rgb(067, 071, 080);
+}

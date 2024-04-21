@@ -97,3 +97,29 @@ section > ul,ol {
     display: inline-block;
     text-align: left;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 35px;
+    color: white;
+    border-style: solid;
+    border-color: hsl(0, 1%, 23%);
+    border-width: 6px;
+    border-radius: 7px;
+    background-color: color-mix(in srgb, #1d1d31 90%, rgb(150, 150, 150))
+}
+footer{
+    text-align: center;
+}
+footer > * {
+    position: absolute;
+    padding-top: .5em;
+    padding-bottom: 0em;
+    padding-left: 0vw;
+    padding-right: 0vw;
+}

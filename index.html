@@ -21,7 +21,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main_group">
             <section id="Title">
                 <h1 class="montserrat-font bolding">Team 9 First Meeting</h1>
                 <h3 class="montserrat-font">Topics: Initial Team structure, BrainStorm, and Roles</h3>
@@ -129,8 +129,8 @@
         </main>
         <br>
         <br>
-        <form>
-            <fieldset>
+        <form class="form_1">
+            <fieldset class="fieldset_1">
                 <legend> Choose Favorite Food</legend>
                 <input type="radio" name="pizza" id="pizza">
                 <label for="pizza">Pizza</label> <br>
@@ -139,15 +139,15 @@
                 <input type="radio" name="NONE" id="NONE">
                 <label for="NONE">None of the Above</label> <br>
             </fieldset>
-            <fieldset>
+            <fieldset class="fieldset_2">
                 <legend>Meeting Date and Topic Selection</legend>
                 <input type="date">
                 <input type="text" placeholder="Please enter topics">
             </fieldset>
-            <label for="text-area"> enter meaning behind your name</label> <br>
+            <label for="text-area" class="element_label_left"> enter meaning behind your name</label> <br>
             <textarea name="text-area" id="text-area">Enter meaning here...</textarea>
             <br>
-            <label for="food-choice">Choose a food:</label>
+            <label for="food-choice" class="element_label" id="Food_Label">Choose a food:</label>
             <input list="foods" name="food-choice" id="food-choice">
             <datalist id="foods">
                 <option value="Chocolate"></option>
@@ -157,7 +157,7 @@
                 <option value="Vanilla Ice Cream"></option>
             </datalist>
             <br>
-            <label for="animals">Choose your favorite Animal: </label>
+            <label class="element_label" id="AnimalLabel" for="animals">Choose your favorite Animal: </label>
             <select name="animals" id="animals">
                 <option value="">Select a option</option>
                 <option value="dog">Dog</option>
@@ -165,7 +165,7 @@
                 <option value="horse">Horse</option>
             </select>
             <br>
-            <button>Do Nothing Button</button>
+            <button title="doNothingButton" class="doNothingButton">Do Nothing Button</button>
         </form>
         <br>
         <hr>

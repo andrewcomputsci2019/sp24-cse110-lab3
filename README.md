@@ -1,1 +1,1 @@
-# [Lab 2 Published Page](https://andrewcomputsci2019.github.io/Lab2_Starter/)
+# [lab3 page](https://andrewcomputsci2019.github.io/sp24-cse110-lab3/)

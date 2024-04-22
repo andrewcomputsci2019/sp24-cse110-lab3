@@ -1,5 +1,8 @@
+:root{
+    --main-bg-color:  color(display-p3 0.947 0 0.5295);
+}
 /* nav bar styling */
-.nav-list {
+header nav ul.nav-list {
     list-style: "\1F517";
 }
 header nav {
@@ -105,6 +108,7 @@ footer {
     bottom: 0;
     width: 100%;
     max-width: 100%;
+    margin: 0 0 0 0;
     height: 35px;
     color: white;
     border-style: solid;
@@ -129,7 +133,7 @@ footer > * {
     grid-template-columns: 1fr 1fr;
 }
 .form_1 fieldset + fieldset {
-    border-color: color(display-p3 0.947 0 0.5295);
+    border-color: var(--main-bg-color,rgb(98.38% 0% 53.33%))
 }
 .form_1 input ~ input {
     border-color: red;
@@ -172,4 +176,53 @@ textarea {
     width: 35%;
     justify-self: center;
     grid-row: 5;
+}
+/* if two br next to each other hide one */
+br:has(+ br){
+    display: none;
+}
+
+@media (width <= 750px) {
+    video {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .form_1{
+        grid-template-columns: 1fr;
+    }
+    .form_1 * {
+        grid-column: 1;
+    }
+    #Food_Label {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    #food-choice {
+        grid-row: auto;
+        grid-column: 1;
+    }
+    button[title] {
+        width: 2.5in;
+        grid-row: 9;
+        justify-self: center;
+    }
+    textarea {
+        grid-row: 4
+    }
+    .nameLabel{
+        grid-row: 3;
+    }
+    #AnimalLabel{
+        grid-row: 5;
+    }
+    #AnimalLabel + select {
+        grid-column: 1;
+        width: 35%;
+        justify-self: center;
+        grid-row: 6;
+    }
 }
